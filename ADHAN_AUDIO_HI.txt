@@ -1,0 +1,19 @@
+Noor-e-Namaz - Adhan audio
+
+Audio source selected:
+Wikimedia Commons - File:Adhan.ogg
+https://commons.wikimedia.org/wiki/File:Adhan.ogg
+
+The file page identifies the 42-second recording as CC0 1.0 (public-domain dedication). The recording is OGG Vorbis. Android MediaPlayer supports OGG in a raw resource; the resource filename must be adhan.ogg (resource name: adhan).
+
+IMPORTANT:
+The audio binary could not be downloaded into this project in this session because the file host was unreachable from the build environment. Therefore, this ZIP does NOT yet contain the recording, and playback has NOT been tested.
+
+To finish integration:
+1. Open the Wikimedia Commons page above.
+2. Download the original Adhan.ogg file to your phone.
+3. Upload Adhan.ogg in this ChatGPT conversation.
+4. The file can then be placed at app/src/main/res/raw/adhan.ogg.
+5. Build and test the app before treating prayer-time playback as verified.
+
+Do not rename it to adhan.mp3 unless it is actually converted to MP3. The Android code looks up the raw resource by the name "adhan"; either adhan.ogg or adhan.mp3 can work when the matching file is present.
